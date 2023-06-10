@@ -1,8 +1,12 @@
 import getopt, sys
+from typing import Callable
 
 
 class CliArguments:
-    def __init__(self, options: list[str], version: str = None) -> None:
+    def __init__(
+        self, options: list[str], version: str = None, help: Callable = None
+    ) -> None:
+        self.__help = help
         self.__version = version
         self.__OPTS = {x[0]: x for x in options}
         self.SHORT_OPTS = ":".join(x[0] for x in options) + ":"
@@ -12,6 +16,11 @@ class CliArguments:
         cli_opts = {}
 
         try:
+            if "--help" in sys.argv:
+                if self.__help is not None:
+                    self.__help()
+                sys.exit()
+
             if "--version" in sys.argv:
                 if self.__version is not None:
                     print(self.__version)
