@@ -8,9 +8,9 @@ with codecs.open(os.path.join(here, "readme.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
 VERSION = "1.0.0"
-DESCRIPTION = "The cliargs package is a Python library for parsing command line arguments. It provides a simpler and more intuitive API with less code and easy cli argument parsing."
+DESCRIPTION = "The cliopts package is a Python library for parsing command line arguments. It provides a simpler and more intuitive API with less code and easy cli argument parsing."
 
-LONG_DESCRIPTION = """The Cliargs Library is a Python library designed to simplify the process of parsing command line arguments. It provides a straightforward and intuitive API, reducing the amount of code required for cli argument parsing."""
+LONG_DESCRIPTION = """The cliopts Library is a Python library designed to simplify the process of parsing command line arguments. It provides a straightforward and intuitive API, reducing the amount of code required for cli argument parsing."""
 
 # Setting up
 setup(
