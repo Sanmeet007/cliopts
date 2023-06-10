@@ -16,7 +16,7 @@ setup(
     name="cliargs",
     version=VERSION,
     license="GPL-3.0 license",
-    url="https://github.com/Sanmeet007/pandas_prototype",
+    url="https://github.com/Sanmeet007/cliargs.git",
     author="Sanmeet Singh",
     author_email="ssanmeet123@gmail.com",
     description=DESCRIPTION,
