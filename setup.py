@@ -26,12 +26,12 @@ setup(
     install_requires=[],
     keywords=[
         "python",
-        "pandas",
-        "pandas prototype",
-        "prototyping",
-        "data visualizing",
-        "data scientist",
-        "data",
+        "command line",
+        "command line arguments",
+        "cli",
+        "cli args",
+        "cliargs",
+        "argparser",
     ],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
