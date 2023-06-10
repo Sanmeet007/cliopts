@@ -1,23 +1,23 @@
-# Cliargs Library
+# Cliopts Library
 
-The Cliargs Library is a Python library designed to simplify the process of parsing command line arguments. It provides a straightforward and intuitive API, reducing the amount of code required for cli argument parsing.
+The Cliopts Library is a Python library designed to simplify the process of parsing command line arguments. It provides a straightforward and intuitive API, reducing the amount of code required for cli argument parsing.
 
 ## Installation
 
-To install the Cliargs Library, run the following command in your terminal (cmd, bash, powershell, etc.):
+To install the Cliopts Library, run the following command in your terminal (cmd, bash, powershell, etc.):
 
 ```bash
-pip install cliargs
+pip install cliopts
 ```
 
 ## Usage
 
 To use the library in your code, follow these steps:
 
-1. Import the `CliArguments` class from the `cliargs` module:
+1. Import the `CliArguments` class from the `cliopts` module:
 
    ```python
-   from cliargs import CliArguments
+   from cliopts import CliArguments
    ```
 
 2. Create an instance of `CliArguments` and pass a list of argument names as a parameter:
@@ -46,12 +46,12 @@ To use the library in your code, follow these steps:
 
 ### Example
 
-Let's consider an example to illustrate how to use the Cliargs Library. Suppose we are creating a Python script that takes a filename as input from the command line.
+Let's consider an example to illustrate how to use the cliopts Library. Suppose we are creating a Python script that takes a filename as input from the command line.
 
 In `script.py` file:
 
 ```python
-from cliargs import CliArguments
+from cliopts import CliArguments
 
 # Define the desired arguments: filepath, count, boolean
 args = CliArguments(["filepath", "count", "boolean"]) 
@@ -82,7 +82,7 @@ If you want your script to return a version number when prompted with `--version
 Example in `script.py` file:
 
 ```python
-from cliargs import CliArguments
+from cliopts import CliArguments
 
 args = CliArguments(["options"], "v1.0.0")
 ```
@@ -102,7 +102,7 @@ If you want your script to run a help program  when prompted with `--help`, you 
 Example in `script.py` file:
 
 ```python
-from cliargs import CliArguments
+from cliopts import CliArguments
 
 def help_function(): 
    print("HELP STRING")

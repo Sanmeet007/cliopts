@@ -14,10 +14,10 @@ LONG_DESCRIPTION = """The Cliargs Library is a Python library designed to simpli
 
 # Setting up
 setup(
-    name="cliargs",
+    name="cliopts",
     version=VERSION,
     license="GPL-3.0 license",
-    url="https://github.com/Sanmeet007/cliargs.git",
+    url="https://github.com/Sanmeet007/cliopts.git",
     author="Sanmeet Singh",
     author_email="ssanmeet123@gmail.com",
     description=DESCRIPTION,
@@ -31,6 +31,8 @@ setup(
         "command line arguments",
         "cli",
         "cli args",
+        "cli opts",
+        "command line options",
         "cliargs",
         "argparser",
     ],
