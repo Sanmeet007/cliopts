@@ -38,6 +38,6 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3.10",
-        "Operating System :: Microsoft :: Windows :: Linux",
+        "Operating System :: Microsoft :: Windows",
     ],
 )
