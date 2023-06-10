@@ -10,8 +10,6 @@ with codecs.open(os.path.join(here, "readme.md"), encoding="utf-8") as fh:
 VERSION = "1.0.0"
 DESCRIPTION = "The cliopts package is a Python library for parsing command line arguments. It provides a simpler and more intuitive API with less code and easy cli argument parsing."
 
-LONG_DESCRIPTION = """The cliopts Library is a Python library designed to simplify the process of parsing command line arguments. It provides a straightforward and intuitive API, reducing the amount of code required for cli argument parsing."""
-
 # Setting up
 setup(
     name="cliopts",
@@ -22,7 +20,7 @@ setup(
     author_email="ssanmeet123@gmail.com",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
-    long_description=LONG_DESCRIPTION,
+    long_description=long_description,
     packages=find_packages(),
     install_requires=[],
     keywords=[
