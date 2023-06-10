@@ -1,0 +1,7 @@
+pandas_prototype/debug.py
+.venv/
+pandas_prototype.egg-info/
+pandas_prototype/__pycache__/
+dist/
+build/
+test*
