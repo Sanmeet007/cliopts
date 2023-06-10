@@ -1,6 +1,5 @@
-pandas_prototype/debug.py
 .venv/
-pandas_prototype.egg-info/
+*.egg-info/
 pandas_prototype/__pycache__/
 dist/
 build/
