@@ -95,6 +95,29 @@ py script.py --version
 
 The output will be `v1.0.0`, matching the second parameter.
 
+## Attach Help Function
+
+If you want your script to run a help program  when prompted with `--help`, you can easily achieve that by passing a help_function , callable as the third parameter when creating an instance of `CliArguments`.
+
+Example in `script.py` file:
+
+```python
+from cliargs import CliArguments
+
+def help_function(): 
+   print("HELP STRING")
+
+args = CliArguments(["options"], "v1.0.0"  , help_function)
+```
+
+You can now run a help function using the following command:
+
+```bash
+py script.py --help
+```
+
+The output will be `HELP STRING`, matching the output of function passed as third parameter.
+
 ## Contact the Developer
 
 For any inquiries or assistance, you can contact the developer at <ssanmeet123@gmail.com>. Feel free to reach out with any questions or feedback you may have.
