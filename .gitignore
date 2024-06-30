@@ -4,3 +4,4 @@ pandas_prototype/__pycache__/
 dist/
 build/
 test*
+.test
