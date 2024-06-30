@@ -1,6 +1,6 @@
 .venv/
 *.egg-info/
-pandas_prototype/__pycache__/
+__pycache__
 dist/
 build/
 test*
