@@ -60,11 +60,11 @@ class CliArguments:
         self.SHORT_OPTS = [x for x in self.__OPTS.keys()]
         self.LONG_OPTS = [opt + "=" for opt in self.__OPTS.values()]
 
-    def __default_help(self):
+    def __default_help(self, options_desc):
         print(f"Usage : {self.__name} [options]\n")
         print("Options:")
         for i, (k, v) in enumerate(self.__OPTS.items(), 1):
-            print(f"\t -{k} {v} : {self.__options_desc.get(v , f'argument {i}')}")
+            print(f"\t -{k} {v} : {options_desc.get(v , f'argument {i}')}")
 
         print("")
         print("--version : Show version")
