@@ -13,6 +13,7 @@ class CliArguments:
         help: Callable = None,
         throw_on_invalid_args=True,
         name="python-program",
+        desc=None,
     ) -> None:
         """
         A class to handle command-line arguments for a Python program.
@@ -24,6 +25,7 @@ class CliArguments:
             help ((dict[str, str], optional): A function to display help information. If not provided, the default help function is triggerd using `options_desc`.
             throw_on_invalid_args (bool, optional): Whether to throw an error on invalid arguments. Defaults to True.
             name (str, optional): The name of the program. Defaults to "python-program".
+            desc (str, optional): The description of the program. Defaults to None.
 
         Example:
             >>> def custom_help(options_desc):
@@ -40,6 +42,7 @@ class CliArguments:
             ... )
         """
 
+        self.__desc = desc
         self.__options_desc = options_desc
         self.__name = name
         self.throw_on_invalid_args = throw_on_invalid_args
@@ -61,7 +64,14 @@ class CliArguments:
         self.LONG_OPTS = [opt + "=" for opt in self.__OPTS.values()]
 
     def __default_help(self, options_desc):
-        print(f"Usage : {self.__name} [options]\n")
+        print(f"Usage : {self.__name} [options]")
+        if self.__desc:
+            print()
+            print(self.__desc)
+            print()
+        else:
+            print()
+
         print("Options:")
         for i, (k, v) in enumerate(self.__OPTS.items(), 1):
             print(f"\t -{k} {v} : {options_desc.get(v , f'argument {i}')}")
