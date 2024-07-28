@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "readme.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = "1.1.3"
+VERSION = "1.1.4"
 DESCRIPTION = "The cliopts package is a Python library for parsing command line arguments. It provides a simpler and more intuitive API with less code and easy cli argument parsing."
 
 # Setting up
