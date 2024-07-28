@@ -134,14 +134,13 @@ class CliArguments:
                     args[k] = float(current_arg)
                 elif current_arg.isnumeric():
                     args[k] = int(current_arg)
-
-            elif type(current_arg) == str and (
-                current_arg == "false"
-                or current_arg == "true"
-                or current_arg == "True"
-                or current_arg == "False"
-            ):
-                args[k] = True if current_arg.lower() == "true" else False
+                elif (
+                    current_arg == "false"
+                    or current_arg == "true"
+                    or current_arg == "True"
+                    or current_arg == "False"
+                ):
+                    args[k] = True if current_arg.lower() == "true" else False
 
         return args
 
