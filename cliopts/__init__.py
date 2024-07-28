@@ -77,7 +77,10 @@ class CliArguments:
             print(f"\t -{k} {v} : {options_desc.get(v , f'argument {i}')}")
 
         print("")
-        print("--version : Show version")
+        if self.__version is not None : 
+            print(f"--version : {self.__version}")
+        else : 
+            print("--version : Show version")
         print("")
 
     def __build_long_opts(self, opts: Iterable[str] | dict[str, str]):
